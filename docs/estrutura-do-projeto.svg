@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2160" viewBox="0 0 1600 2160">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9" fill="none" stroke="#435363" stroke-width="1.5"/></marker></defs>
+<rect width="100%" height="100%" fill="#fffdf7"/>
+<text x="80" y="77.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="42" font-weight="700">DOS CSVs ÀS CONSULTAS</text>
+<text x="80" y="120.0" fill="#596b7b" font-family="Segoe Print,Segoe UI,sans-serif" font-size="23" font-weight="400">AED II  •  Arquivos binários + organização sequencial-indexada</text>
+<text x="80" y="188.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="28" font-weight="700">01  IMPORTAR E SEPARAR</text>
+<text x="80" y="223.0" fill="#596b7b" font-family="Segoe Print,Segoe UI,sans-serif" font-size="18" font-weight="400">Um evento já está registrado na fonte. O programa lê e transforma essa linha.</text>
+<rect x="80" y="250" width="440" height="155" rx="15" fill="#fff1c7" stroke="#435363" stroke-width="2"/>
+<path d="M94 253 L503 251" stroke="#435363" opacity=".2" fill="none"/>
+<text x="104" y="291.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="24" font-weight="700">CSV: eventos da loja</text>
+<text x="104" y="331.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">2019-Oct.csv + 2019-Nov.csv</text>
+<text x="104" y="357.6" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">view / cart / purchase</text>
+<text x="104" y="384.2" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">1 linha de dados = 1 evento</text>
+<rect x="620" y="250" width="900" height="155" rx="15" fill="#edf4fa" stroke="#435363" stroke-width="2"/>
+<path d="M634 253 L1503 251" stroke="#435363" opacity=".2" fill="none"/>
+<text x="644" y="291.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="24" font-weight="700">LeitorCsv: uma linha por vez</text>
+<text x="644" y="331.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Pula o cabeçalho, interpreta os campos e continua automaticamente.</text>
+<text x="644" y="357.6" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Na amostra: 10 mil eventos por CSV, outubro antes de novembro.</text>
+<text x="644" y="384.2" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Não coloca os CSVs inteiros em uma lista na RAM.</text>
+<path d="M 530 327 L 610 327" stroke="#435363" stroke-width="2.5" fill="none" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 1060 415 L 1060 445 L 425 445 L 425 480" stroke="#435363" stroke-width="2.5" fill="none" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 1060 445 L 1175 445 L 1175 480" stroke="#435363" stroke-width="2.5" fill="none" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<rect x="100" y="490" width="650" height="155" rx="15" fill="#dff2e7" stroke="#435363" stroke-width="2"/>
+<path d="M114 493 L733 491" stroke="#435363" opacity=".2" fill="none"/>
+<text x="124" y="531.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="24" font-weight="700">Produto: o cadastro do item</text>
+<text x="124" y="571.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Id + Categoria + Marca + Preco</text>
+<text x="124" y="597.6" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Se o ID já existe, preserva a primeira ocorrência.</text>
+<text x="124" y="624.2" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Se não existe, insere na posição correta.</text>
+<rect x="850" y="490" width="650" height="155" rx="15" fill="#e8e3fa" stroke="#435363" stroke-width="2"/>
+<path d="M864 493 L1483 491" stroke="#435363" opacity=".2" fill="none"/>
+<text x="874" y="531.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="24" font-weight="700">Acesso: o registro do evento</text>
+<text x="874" y="571.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Id + ProdutoId + UsuarioId + TipoEvento + DataHora</text>
+<text x="874" y="597.6" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Cada linha importada gera um novo acesso.</text>
+<text x="874" y="624.2" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">IDs continuam de um CSV para o próximo.</text>
+<path d="M 425 655 L 425 690" stroke="#435363" stroke-width="2.5" fill="none" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 1175 655 L 1175 690" stroke="#435363" stroke-width="2.5" fill="none" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<rect x="100" y="700" width="650" height="140" rx="15" fill="#dff2e7" stroke="#435363" stroke-width="2"/>
+<path d="M114 703 L733 701" stroke="#435363" opacity=".2" fill="none"/>
+<text x="124" y="741.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="24" font-weight="700">dados/produtos.bin</text>
+<text x="124" y="781.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">7.510 produtos únicos, ordenados pelo Id.</text>
+<text x="124" y="807.6" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Cada registro tem 175 bytes.</text>
+<rect x="850" y="700" width="650" height="140" rx="15" fill="#e8e3fa" stroke="#435363" stroke-width="2"/>
+<path d="M864 703 L1483 701" stroke="#435363" opacity=".2" fill="none"/>
+<text x="874" y="741.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="24" font-weight="700">dados/acessos.bin</text>
+<text x="874" y="781.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">20.000 acessos, ordenados pelo Id do acesso.</text>
+<text x="874" y="807.6" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Cada registro tem 56 bytes.</text>
+<path d="M 425 850 L 425 885" stroke="#435363" stroke-width="2.5" fill="none" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 1175 850 L 1175 885" stroke="#435363" stroke-width="2.5" fill="none" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<rect x="100" y="895" width="650" height="140" rx="15" fill="#fbe4d6" stroke="#435363" stroke-width="2"/>
+<path d="M114 898 L733 896" stroke="#435363" opacity=".2" fill="none"/>
+<text x="124" y="936.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="24" font-weight="700">dados/produtos.idx</text>
+<text x="124" y="976.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Uma chave + posição a cada 10 produtos.</text>
+<text x="124" y="1002.6" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">751 entradas de 16 bytes.</text>
+<rect x="850" y="895" width="650" height="140" rx="15" fill="#fbe4d6" stroke="#435363" stroke-width="2"/>
+<path d="M864 898 L1483 896" stroke="#435363" opacity=".2" fill="none"/>
+<text x="874" y="936.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="24" font-weight="700">dados/acessos.idx</text>
+<text x="874" y="976.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Uma chave + posição a cada 10 acessos.</text>
+<text x="874" y="1002.6" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">2.000 entradas de 16 bytes.</text>
+<text x="80" y="1118.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="28" font-weight="700">02  CONSULTAR SEM LER TUDO</text>
+<text x="80" y="1153.0" fill="#596b7b" font-family="Segoe Print,Segoe UI,sans-serif" font-size="18" font-weight="400">Exemplo ilustrativo de busca pelo índice: procurar o produto de ID 350.</text>
+<rect x="100" y="1185" width="400" height="155" rx="15" fill="#edf4fa" stroke="#435363" stroke-width="2"/>
+<path d="M114 1188 L483 1186" stroke="#435363" opacity=".2" fill="none"/>
+<text x="124" y="1224.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="22" font-weight="700">1. Recebe o ID</text>
+<text x="124" y="1266.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Menu: buscar usando o índice.</text>
+<text x="124" y="1292.6" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Produto procurado: 350.</text>
+<text x="124" y="1319.2" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">O índice fica no disco.</text>
+<rect x="600" y="1185" width="430" height="155" rx="15" fill="#fbe4d6" stroke="#435363" stroke-width="2"/>
+<path d="M614 1188 L1013 1186" stroke="#435363" opacity=".2" fill="none"/>
+<text x="624" y="1224.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="22" font-weight="700">2. Localiza o bloco</text>
+<text x="624" y="1266.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Busca binária no .idx.</text>
+<text x="624" y="1292.6" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Maior chave &lt;= 350: 300.</text>
+<text x="624" y="1319.2" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Entrada: 300 → posição 10.</text>
+<rect x="1130" y="1185" width="370" height="155" rx="15" fill="#dff2e7" stroke="#435363" stroke-width="2"/>
+<path d="M1144 1188 L1483 1186" stroke="#435363" opacity=".2" fill="none"/>
+<text x="1154" y="1224.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="22" font-weight="700">3. Lê os candidatos</text>
+<text x="1154" y="1266.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Seek: 10 × 175 = 1.750.</text>
+<text x="1154" y="1292.6" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Lê posições 10 a 19.</text>
+<text x="1154" y="1319.2" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Retorna produto ou null.</text>
+<path d="M 510 1260 L 590 1260" stroke="#435363" stroke-width="2.5" fill="none" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 1040 1260 L 1120 1260" stroke="#435363" stroke-width="2.5" fill="none" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<text x="100" y="1379.0" fill="#596b7b" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Contar acessos/compras por ProdutoId é diferente: percorre acessos.bin, um registro por vez.</text>
+<text x="80" y="1458.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="28" font-weight="700">03  ALTERAR MANTENDO A ORDEM</text>
+<text x="80" y="1493.0" fill="#596b7b" font-family="Segoe Print,Segoe UI,sans-serif" font-size="18" font-weight="400">O ID identifica o registro; a posição física pode mudar. Não renumeramos os IDs restantes.</text>
+<rect x="100" y="1525" width="650" height="180" rx="15" fill="#dff2e7" stroke="#435363" stroke-width="2"/>
+<path d="M114 1528 L733 1526" stroke="#435363" opacity=".2" fill="none"/>
+<text x="124" y="1565.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="23" font-weight="700">Inserir 20: abre espaço à direita</text>
+<text x="124" y="1606.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Antes:       [10] [30] [40]</text>
+<text x="124" y="1632.6" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Depois:    [10] [20] [30] [40]</text>
+<text x="124" y="1659.2" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Move do final para o começo; usa um registro por vez.</text>
+<text x="124" y="1685.8" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">ID repetido? Recusa a inserção.</text>
+<rect x="850" y="1525" width="650" height="180" rx="15" fill="#ffe7e2" stroke="#435363" stroke-width="2"/>
+<path d="M864 1528 L1483 1526" stroke="#435363" opacity=".2" fill="none"/>
+<text x="874" y="1565.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="23" font-weight="700">Remover 20: fecha o espaço à esquerda</text>
+<text x="874" y="1606.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Antes:       [10] [20] [30] [40]</text>
+<text x="874" y="1632.6" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Depois:    [10] [30] [40]</text>
+<text x="874" y="1659.2" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Move os seguintes e corta o final com SetLength.</text>
+<text x="874" y="1685.8" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Remover produto preserva seu histórico de acessos.</text>
+<text x="180" y="1750.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="20" font-weight="700">Após uma alteração individual: reconstrói o índice correspondente para atualizar chaves e posições.</text>
+<text x="80" y="1828.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="28" font-weight="700">04  BYTES, MEMÓRIA E PERSISTÊNCIA</text>
+<text x="80" y="1863.0" fill="#596b7b" font-family="Segoe Print,Segoe UI,sans-serif" font-size="18" font-weight="400">A classe organiza os campos; o código de gravação define o formato e o tamanho no disco.</text>
+<rect x="100" y="1895" width="650" height="180" rx="15" fill="#fff1c7" stroke="#435363" stroke-width="2"/>
+<path d="M114 1898 L733 1896" stroke="#435363" opacity=".2" fill="none"/>
+<text x="124" y="1935.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="23" font-weight="700">Como alcança um registro?</text>
+<text x="124" y="1976.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Endereço = posição × tamanho do registro.</text>
+<text x="124" y="2002.6" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Produto: 8 + 100 + 50 + 16 + 1 = 175 bytes.</text>
+<text x="124" y="2029.2" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Acesso: 8 + 8 + 8 + 8 + 23 + 1 = 56 bytes.</text>
+<text x="124" y="2055.8" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Textos: UTF-8 + espaços. Último byte: LF (\n).</text>
+<rect x="850" y="1895" width="650" height="180" rx="15" fill="#edf4fa" stroke="#435363" stroke-width="2"/>
+<path d="M864 1898 L1483 1896" stroke="#435363" opacity=".2" fill="none"/>
+<text x="874" y="1935.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="23" font-weight="700">Ao abrir de novo</text>
+<text x="874" y="1976.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Preserva os arquivos .bin; confere os .idx salvos.</text>
+<text x="874" y="2002.6" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Reconstrói índice ausente ou desatualizado.</text>
+<text x="874" y="2029.2" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Não importa os CSVs novamente sozinho.</text>
+<text x="874" y="2055.8" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Ao sair pelo menu, salva os dois índices.</text>
+<text x="100" y="2120.0" fill="#596b7b" font-family="Segoe Print,Segoe UI,sans-serif" font-size="20" font-weight="400">Amostra: 20 mil eventos dos dois meses. Os CSVs completos continuam fora do projeto.</text>
+</svg>

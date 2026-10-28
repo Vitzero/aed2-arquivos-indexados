@@ -1,0 +1,11 @@
+# Arquivos gerados pela compilação e pelo Visual Studio
+bin/
+obj/
+.vs/
+*.user
+*.suo
+
+# Os CSVs originais são grandes e ficam fora da entrega.
+*.csv
+
+# Os arquivos finais em dados/ (.bin e .idx) devem entrar no repositório.

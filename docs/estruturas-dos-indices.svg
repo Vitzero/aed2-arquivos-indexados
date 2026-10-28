@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="2500" viewBox="0 0 1800 2500">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9" fill="none" stroke="#435363" stroke-width="1.5"/></marker></defs>
+<rect width="100%" height="100%" fill="#fffdf7"/>
+<text x="80" y="77.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="42" font-weight="700">COMO OS ÍNDICES SÃO DESENHADOS</text>
+<text x="80" y="123.0" fill="#596b7b" font-family="Segoe Print,Segoe UI,sans-serif" font-size="23" font-weight="400">Um nível de índice parcial • entradas ordenadas • busca diretamente nos arquivos</text>
+<text x="80" y="193.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="28" font-weight="700">01  CADA ARQUIVO TEM SEU ÍNDICE</text>
+<text x="80" y="228.0" fill="#596b7b" font-family="Segoe Print,Segoe UI,sans-serif" font-size="18" font-weight="400">O índice guarda referências para os dados; não contém uma cópia completa dos registros.</text>
+<rect x="100" y="255" width="750" height="150" rx="15" fill="#dff2e7" stroke="#435363" stroke-width="2"/>
+<path d="M114 258 L833 256" stroke="#435363" opacity=".2" fill="none"/>
+<text x="124" y="296.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="24" font-weight="700">produtos.idx → produtos.bin</text>
+<text x="124" y="336.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Chave: Produto.Id  |  dados ordenados por esse ID.</text>
+<text x="124" y="362.6" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">7.510 produtos → 751 entradas no índice.</text>
+<text x="124" y="389.2" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Registro de produto: 175 bytes.</text>
+<rect x="950" y="255" width="750" height="150" rx="15" fill="#e8e3fa" stroke="#435363" stroke-width="2"/>
+<path d="M964 258 L1683 256" stroke="#435363" opacity=".2" fill="none"/>
+<text x="974" y="296.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="24" font-weight="700">acessos.idx → acessos.bin</text>
+<text x="974" y="336.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Chave: Acesso.Id, e não ProdutoId.</text>
+<text x="974" y="362.6" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">20.000 acessos → 2.000 entradas no índice.</text>
+<text x="974" y="389.2" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Registro de acesso: 56 bytes.</text>
+<text x="80" y="478.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="28" font-weight="700">02  UMA ENTRADA APONTA PARA CADA BLOCO</text>
+<text x="80" y="513.0" fill="#596b7b" font-family="Segoe Print,Segoe UI,sans-serif" font-size="18" font-weight="400">Exemplo ilustrativo com 30 produtos. Os IDs abaixo são inventados para facilitar a leitura.</text>
+<rect x="100" y="550" width="550" height="380" rx="15" fill="#fbe4d6" stroke="#435363" stroke-width="2"/>
+<path d="M114 553 L633 551" stroke="#435363" opacity=".2" fill="none"/>
+<text x="124" y="591.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="24" font-weight="700">produtos.idx — ordenado</text>
+<text x="124" y="631.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Uma entrada por bloco de 10 registros.</text>
+<text x="150" y="669.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="700">CHAVE</text>
+<text x="390" y="669.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="700">POSIÇÃO NO .BIN</text>
+<text x="150" y="716.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="26" font-weight="700">100</text>
+<text x="390" y="716.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="26" font-weight="700">0</text>
+<text x="150" y="786.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="26" font-weight="700">300</text>
+<text x="390" y="786.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="26" font-weight="700">10</text>
+<text x="150" y="856.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="26" font-weight="700">500</text>
+<text x="390" y="856.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="26" font-weight="700">20</text>
+<rect x="920" y="540" width="780" height="110" rx="15" fill="#edf4fa" stroke="#435363" stroke-width="2"/>
+<path d="M934 543 L1683 541" stroke="#435363" opacity=".2" fill="none"/>
+<text x="944" y="580.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="23" font-weight="700">Bloco 0 — posições 0 a 9</text>
+<text x="944" y="621.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">[100] [110] [120] [130] [140] [150] [160] [170] [180] [190]</text>
+<rect x="920" y="680" width="780" height="110" rx="15" fill="#fff1c7" stroke="#435363" stroke-width="2"/>
+<path d="M934 683 L1683 681" stroke="#435363" opacity=".2" fill="none"/>
+<text x="944" y="720.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="23" font-weight="700">Bloco 1 — posições 10 a 19</text>
+<text x="944" y="761.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">[300] [310] [320] [330] [340] [350] [360] [370] [380] [390]</text>
+<rect x="920" y="820" width="780" height="110" rx="15" fill="#edf4fa" stroke="#435363" stroke-width="2"/>
+<path d="M934 823 L1683 821" stroke="#435363" opacity=".2" fill="none"/>
+<text x="944" y="860.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="23" font-weight="700">Bloco 2 — posições 20 a 29</text>
+<text x="944" y="901.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">[500] [510] [520] [530] [540] [550] [560] [570] [580] [590]</text>
+<path d="M 665 710 L 780 710 L 780 595 L 905 595" stroke="#435363" stroke-width="2.5" fill="none" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 665 780 L 830 780 L 830 735 L 905 735" stroke="#435363" stroke-width="2.5" fill="none" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 665 850 L 875 850 L 875 875 L 905 875" stroke="#435363" stroke-width="2.5" fill="none" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<text x="100" y="985.0" fill="#596b7b" font-family="Segoe Print,Segoe UI,sans-serif" font-size="20" font-weight="400">Os blocos são grupos lógicos. No arquivo .bin, os registros ficam seguidos, sem caixas ou cabeçalhos de bloco.</text>
+<text x="80" y="1063.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="28" font-weight="700">03  O QUE É GRAVADO EM BYTES?</text>
+<text x="80" y="1098.0" fill="#596b7b" font-family="Segoe Print,Segoe UI,sans-serif" font-size="18" font-weight="400">ID, posição e endereço em bytes são três coisas diferentes.</text>
+<rect x="100" y="1130" width="750" height="175" rx="15" fill="#fbe4d6" stroke="#435363" stroke-width="2"/>
+<path d="M114 1133 L833 1131" stroke="#435363" opacity=".2" fill="none"/>
+<text x="124" y="1171.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="24" font-weight="700">Uma entrada do índice: 16 bytes</text>
+<text x="124" y="1211.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">[ chave: long / 8 bytes ][ posição: long / 8 bytes ]</text>
+<text x="124" y="1237.6" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">A entrada 1 começa no byte 1 × 16 = 16 do .idx.</text>
+<text x="124" y="1264.2" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Exemplo: chave 300 e posição 10.</text>
+<rect x="950" y="1130" width="750" height="175" rx="15" fill="#edf4fa" stroke="#435363" stroke-width="2"/>
+<path d="M964 1133 L1683 1131" stroke="#435363" opacity=".2" fill="none"/>
+<text x="974" y="1171.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="24" font-weight="700">A posição indica um registro nos dados</text>
+<text x="974" y="1211.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Posição 10 de produtos.bin → byte 10 × 175 = 1.750.</text>
+<text x="974" y="1237.6" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Posição 10 de acessos.bin → byte 10 × 56 = 560.</text>
+<text x="974" y="1264.2" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Seek pula para esse endereço; depois lemos o registro.</text>
+<text x="80" y="1393.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="28" font-weight="700">04  PASSO A PASSO: PROCURAR O ID 350</text>
+<text x="80" y="1428.0" fill="#596b7b" font-family="Segoe Print,Segoe UI,sans-serif" font-size="18" font-weight="400">Primeiro pesquisa no índice; depois pesquisa somente o bloco indicado no arquivo de dados.</text>
+<rect x="100" y="1460" width="340" height="170" rx="15" fill="#fbe4d6" stroke="#435363" stroke-width="2"/>
+<path d="M114 1463 L423 1461" stroke="#435363" opacity=".2" fill="none"/>
+<text x="124" y="1499.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="22" font-weight="700">1. Busca binária</text>
+<text x="124" y="1541.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">No .idx, compara as</text>
+<text x="124" y="1567.6" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">chaves 100, 300 e 500.</text>
+<text x="124" y="1594.2" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Procura a maior &lt;= 350.</text>
+<rect x="520" y="1460" width="340" height="170" rx="15" fill="#fff1c7" stroke="#435363" stroke-width="2"/>
+<path d="M534 1463 L843 1461" stroke="#435363" opacity=".2" fill="none"/>
+<text x="544" y="1499.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="22" font-weight="700">2. Escolhe a entrada</text>
+<text x="544" y="1541.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Escolhida: 300 → 10.</text>
+<text x="544" y="1567.6" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">O ID pode estar nas</text>
+<text x="544" y="1594.2" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">posições 10 a 19.</text>
+<rect x="940" y="1460" width="340" height="170" rx="15" fill="#edf4fa" stroke="#435363" stroke-width="2"/>
+<path d="M954 1463 L1263 1461" stroke="#435363" opacity=".2" fill="none"/>
+<text x="964" y="1499.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="22" font-weight="700">3. Usa Seek</text>
+<text x="964" y="1541.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Vai ao byte 1.750</text>
+<text x="964" y="1567.6" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">de produtos.bin.</text>
+<text x="964" y="1594.2" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Lê um produto por vez.</text>
+<rect x="1360" y="1460" width="340" height="170" rx="15" fill="#dff2e7" stroke="#435363" stroke-width="2"/>
+<path d="M1374 1463 L1683 1461" stroke="#435363" opacity=".2" fill="none"/>
+<text x="1384" y="1499.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="22" font-weight="700">4. Encontra 350</text>
+<text x="1384" y="1541.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Neste desenho, está</text>
+<text x="1384" y="1567.6" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">na posição 15.</text>
+<text x="1384" y="1594.2" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Começa no byte 2.625.</text>
+<path d="M 450 1545 L 510 1545" stroke="#435363" stroke-width="2.5" fill="none" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 870 1545 L 930 1545" stroke="#435363" stroke-width="2.5" fill="none" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 1290 1545 L 1350 1545" stroke="#435363" stroke-width="2.5" fill="none" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<text x="100" y="1675.0" fill="#596b7b" font-family="Segoe Print,Segoe UI,sans-serif" font-size="20" font-weight="400">Se o ID não existir, retorna null ao ultrapassá-lo ou terminar o bloco. No máximo 10 registros candidatos.</text>
+<text x="80" y="1753.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="28" font-weight="700">05  POR QUE O ÍNDICE PRECISA SER REFEITO?</text>
+<text x="80" y="1788.0" fill="#596b7b" font-family="Segoe Print,Segoe UI,sans-serif" font-size="18" font-weight="400">Inserir ou remover muda posições e pode mudar a primeira chave de cada bloco.</text>
+<rect x="100" y="1820" width="750" height="190" rx="15" fill="#edf4fa" stroke="#435363" stroke-width="2"/>
+<path d="M114 1823 L833 1821" stroke="#435363" opacity=".2" fill="none"/>
+<text x="124" y="1860.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="23" font-weight="700">Antes: bloco 1 começa no produto 300</text>
+<text x="124" y="1901.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Posição 9: 190  |  posição 10: 300  |  posição 11: 310</text>
+<text x="124" y="1927.6" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Entrada do índice: 300 → posição 10.</text>
+<text x="124" y="1954.2" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Vamos inserir o produto 295 antes do 300.</text>
+<rect x="950" y="1820" width="750" height="190" rx="15" fill="#ffe7e2" stroke="#435363" stroke-width="2"/>
+<path d="M964 1823 L1683 1821" stroke="#435363" opacity=".2" fill="none"/>
+<text x="974" y="1860.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="23" font-weight="700">Depois: bloco 1 começa no produto 295</text>
+<text x="974" y="1901.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Posição 9: 190  |  posição 10: 295  |  posição 11: 300</text>
+<text x="974" y="1927.6" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">A entrada antiga 300 → 10 ficou errada.</text>
+<text x="974" y="1954.2" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Reconstrução grava: 295 → posição 10.</text>
+<path d="M 865 1915 L 935 1915" stroke="#435363" stroke-width="2.5" fill="none" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<text x="100" y="2056.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="21" font-weight="700">Se removermos o 295, o 300 volta à posição 10. Reconstruir o índice volta a gravar 300 → 10.</text>
+<text x="80" y="2138.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="28" font-weight="700">06  MESMA IDEIA PARA OS ACESSOS</text>
+<text x="80" y="2173.0" fill="#596b7b" font-family="Segoe Print,Segoe UI,sans-serif" font-size="18" font-weight="400">Os IDs da importação começam em 1. As posições físicas dos registros começam em 0.</text>
+<rect x="100" y="2205" width="750" height="180" rx="15" fill="#e8e3fa" stroke="#435363" stroke-width="2"/>
+<path d="M114 2208 L833 2206" stroke="#435363" opacity=".2" fill="none"/>
+<text x="124" y="2246.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="24" font-weight="700">acessos.idx</text>
+<text x="124" y="2286.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Id 1  → posição 0    |  Id 11 → posição 10</text>
+<text x="124" y="2312.6" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Id 21 → posição 20  |  Id 31 → posição 30</text>
+<text x="124" y="2339.2" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Cada referência abre um bloco de até 10 acessos.</text>
+<rect x="950" y="2205" width="750" height="180" rx="15" fill="#fff1c7" stroke="#435363" stroke-width="2"/>
+<path d="M964 2208 L1683 2206" stroke="#435363" opacity=".2" fill="none"/>
+<text x="974" y="2246.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="24" font-weight="700">Um nível, sem carregar a base inteira</text>
+<text x="974" y="2286.0" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">A busca lê uma entrada do .idx por comparação.</text>
+<text x="974" y="2312.6" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Depois lê um registro do .bin por vez.</text>
+<text x="974" y="2339.2" fill="#253648" font-family="Segoe Print,Segoe UI,sans-serif" font-size="19" font-weight="400">Não há árvore de índices nem índice por ProdutoId.</text>
+<text x="100" y="2441.0" fill="#596b7b" font-family="Segoe Print,Segoe UI,sans-serif" font-size="21" font-weight="400">Ao abrir: confere os índices salvos. Ao alterar: reconstrói o correspondente. Ao sair: salva os dois.</text>
+</svg>
